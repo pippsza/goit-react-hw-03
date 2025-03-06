@@ -1,0 +1,16 @@
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: solid black 1px;
+  width: 240px;
+}
+.button {
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+}
+.button:hover {
+  background-color: #dbdbdb;
+}

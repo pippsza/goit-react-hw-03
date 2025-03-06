@@ -1,0 +1,9 @@
+.ContactList {
+  display: flex;
+
+  align-items: center;
+  gap: 40px;
+}
+.listItem {
+  border-radius: 10px;
+}
