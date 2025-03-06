@@ -4,14 +4,16 @@ export default function ContactList({ contacts, filteredValues }) {
   return (
     <ul className={css.ContactList}>
       {contacts
+        .filter((el) => {
+          return el.name.toLowerCase().includes(filteredValues.toLowerCase());
+        })
         .map((contact) => {
           return (
             <li className={css.listItem} key={contact.id}>
               <Contacts contacts={contact}></Contacts>
             </li>
           );
-        })
-              .filter((el) => { return () )}
+        })}
     </ul>
-  ); 
+  );
 }
